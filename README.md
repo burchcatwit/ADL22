@@ -8,7 +8,18 @@
 
 ## 2. Intro to convolution operations: padding
   - What is a response layer? (Give a brief, 1-sentence description)
+    - A response layer is a slightly smaller (in the x,y dimension), but deeper (in the z dimension) convulution of the original input.
   - Given the filter shape of (26, 26, 32), what does each number represent?
+    - The 26s are the x and y number of pizels of the filter shape and the 32 is how many filters there are, so in this example we would have 32 stacked (26x26) filter layers.
   - Given 6x6 input and filter of (3,3): what is the response shape that we get? 
+    - The response shape would be (4,4)
   - Given (33, 33, 1) input and filter of (2,2): what is the response shape that we get? 
-  - What is the difference between ‘valid’ and ‘same’ padding? Given 6x6 input and filter of (3,3), what are the response shapes for both options? 
+    - 33-3+1 = 31 so (31,31)
+  - What is the difference between ‘valid’ and ‘same’ padding? Given 6x6 input and filter of (3,3), what are the response shapes for both options?
+    - The default option is valid padding which is no padding or disabled padding. Same padding is padding with an equal input and output size. Thus, the response shape for both options would be the same size of (4,4)
+
+## 3. Convolution parameters: stride and pooling
+  - What is max pooling? (Give a brief, 1-sentence description)
+    - 
+  - If I apply pooling of 2 (2,2 window with a stride of 2) to a (6,6) array, what is the resulting size?
+    - 
