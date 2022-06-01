@@ -38,7 +38,7 @@
   - What can we use the ImageDataGenerator for? What can it help us fight? (Give a brief, 1-sentence description)
     - It can turn image files into pre-processed tensors for our machine learning models, but it can also help fight overfitting by randomly generating image transformations or "augmented" data which allows the model to generalize better.
   - What is a better idea: To use one larger kernel (8,8) or multiple stacked smaller ones, 4x(2,2)? Why? Show the number of weights for each option. 
-    - 
+    - Multiple stackes smaller ones is a much better idea because it results in less weights (4x2x2 = 16 vs 8x8 = 64), which cuts down on processing time and cost while also being less prone to overfitting.
 
 
 
