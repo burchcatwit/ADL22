@@ -20,6 +20,28 @@
 
 ## 3. Convolution parameters: stride and pooling
   - What is max pooling? (Give a brief, 1-sentence description)
-    - 
+    - An aggressive downsampling technique where the downsampled output is the max of the given window.
   - If I apply pooling of 2 (2,2 window with a stride of 2) to a (6,6) array, what is the resulting size?
-    - 
+    - (3,3)
+
+## 4. ConvNet Architectures, layers
+  - Define I, O, F, S, P as used in this lecture (Give a brief, 1-sentence description)
+    - I: Input Volume (ex. size of the image), F: filter (ex. kernel zie), S: Stride, P: padding (usually zero padding) these are the pieces that make up every ConvNet architecture.
+  - What is my output size if Input = (100, 100), kernel size=(2, 2), the stride of 1, and no pooling?
+    - (I-F+2P)/S + 1 = (100-2+2(0))/1 + 1 = 99 so (99, 99)
+  - How many weights do I have if I have 24 such filters stacked (conv2_24)?
+    - 2x2x1x24x24 = 2304
+  - Solve for the padding (P), in terms of I, F, and S, if we want the input and output size to remain the same. 
+    - P = (S + F)/2
+
+## 5. Practical patterns
+  - 
+
+
+
+
+
+
+
+
+
